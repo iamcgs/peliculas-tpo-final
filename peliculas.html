@@ -14,7 +14,7 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <title>Películas</title>
+    <title>Películas | Admin</title>
   </head>
   <body class="bg-dark text-light">
     <header id="header">
@@ -22,7 +22,12 @@
     </header>
     <main class="my-4">
       <div id="app" class="container text-center">
-        <h1 class="display-3 mb-3">Películas</h1>
+        <h1 class="display-3">Películas</h1>
+        <br />
+        <a class="btn btn-primary" href="pelicula_nueva.html"
+          >Agregar Película</a
+        >
+        <br /><br />
 
         <div v-if="error">
           <p>
@@ -55,13 +60,21 @@
                   <p class="card-text d-flex flex-column">
                     <span>Género: {{pelicula.genero}}</span>
                     <span>Duración: {{pelicula.duracion}} mins</span>
+                    <span
+                      >Más Info:
+                      <a :href="pelicula.info" target="_blank">Link</a></span
+                    >
                   </p>
-                  <div class="d-grid">
+                  <div class="row mx-0 gap-2">
                     <a
-                      :href="pelicula.info"
-                      target="_blank"
-                      class="col btn btn-primary"
-                      >Más Info</a
+                      class="col btn btn-success"
+                      :href="'pelicula_update.html?id='+ pelicula.id"
+                      >Editar</a
+                    >
+                    <a
+                      v-on:click="eliminar(pelicula.id)"
+                      class="col btn btn-danger"
+                      >Eliminar</a
                     >
                   </div>
                 </div>
