@@ -1,41 +1,47 @@
-document.getElementById('header').innerHTML = ` 
-                <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                    <div class="container">
-                        <a class="navbar-brand" href="peliculas.html">Navbar</a>
-                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="collapsibleNavId">
-                            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="index.html" aria-current="page">Home <span
-                                    class="visually-hidden">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="productos.html">Produtos</a>
-                                    <a class="dropdown-item" href="#">Action 2</a>
-                                </div>
-                                </li>
-                            </ul>
-                            <form class="d-flex my-2 my-lg-0">
-                                <input class="form-control me-sm-2" type="text" placeholder="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                </nav>
-            `;
-
-document.getElementById('footer').innerHTML = ` 
-                <div class="text-center p-4">
-                    <p>Desarrollado por:</p>
+document.getElementById('header').innerHTML = `
+    <div class="p-9 bg-info bg-opacity-10 border border-dark border-start-0 rounded-end"> 
+        <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+            <div class="container">
+                <div class="d-flex gap-2 align-items-center">
+                <a href="index.html"><img src="https://icongr.am/feather/film.svg?size=32&amp;color=00aaff" alt="Logo"></a>
+                <h1 class="display-6 text-light">Pelis</h1>
                 </div>
-            `;
+                <div>
+                <a href="peliculas.html" button title="Solo Admin"  class="btn btn-outline-dark my-2 my-sm-0" type="submit">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+        `;
+
+document.getElementById('footer').innerHTML = `
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4 text-center">
+            <!-- Github -->
+            <a class="btn btn-outline-secondary btn-floating m-1" href="#" role="button">
+                <img src="https://icongr.am/fontawesome/github.svg?size=20&color=ffffff" alt="Github">
+            </a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-secondary btn-floating m-1" href="#" role="button" >
+                <img src="https://icongr.am/devicon/twitter-original.svg?size=20&color=currentColor" alt="Twitter">
+            </a>
+            <!-- Facebook -->
+            <a class="btn btn-outline-secondary btn-floating m-1" href="#" role="button">
+                <img src="https://icongr.am/devicon/facebook-plain.svg?size=20&color=00fa04" alt="Google"> 
+            </a>    
+            <!-- Instagram -->
+            <a class="btn btn-outline-secondary btn-floating m-1" href="#" role="button">
+                <img src="https://icongr.am/entypo/instagram.svg?size=20&color=f19a04" alt="Instagram"> 
+            </a>
+            <!-- Linkedin -->
+            <a class="btn btn-outline-secondary btn-floating m-1" href="#" role="button">
+                <img src="https://icongr.am/devicon/linkedin-original.svg?size=20&color=currentColor" alt="Linkedin"> 
+            </a>
+        </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:"Repo Peliculas" | Derechos reservados
+    </div> 
+`;
