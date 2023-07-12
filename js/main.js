@@ -7,7 +7,7 @@ document.getElementById('header').innerHTML = `
                 <h1 class="display-6 text-light">Pelis</h1>
                 </div>
                 <div>
-                <a href="peliculas.html" button title="Solo Admin"  class="btn btn-outline-dark my-2 my-sm-0" type="submit">Login</a>
+                <a href="peliculas.html" button title="Solo Admin"  class="btn btn-outline-dark text-light my-2 my-sm-0" type="submit">Login</a>
                 </div>
             </div>
         </nav>
